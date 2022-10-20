@@ -4,4 +4,4 @@
 
 ### Entrance Book
 
-[![entrance book](../images/entrance-book.png)](https://studist-engineering.gitbook.io/entrance-book/)
+[![entrance book](https://github.com/StudistCorporation/.github/blob/main/images/entrance-book.png?raw=true)](https://studist-engineering.gitbook.io/entrance-book/)

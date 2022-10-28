@@ -37,7 +37,7 @@ runs:
         export IMAGE="${{ inputs.image-ref }}"
         export TRIVY_RESULTS=`cat trivy-results-raw.txt`
         export MANUAL_URL="${{ inputs.manual-url }}"
-        envsubst < ./tmp/containers/.github/actions/image-scan/results.tmpl > trivy-results.txt
+        envsubst < ./tmp/.github/actions/image-scan/results.tmpl > trivy-results.txt
         cat trivy-results.txt | tee -a $GITHUB_STEP_SUMMARY
 
     - name: Create issue

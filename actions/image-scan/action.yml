@@ -14,6 +14,12 @@ inputs:
   slack-incoming-webhook-url:
     description: "Slack通知先Incoming Webhook URL"
     required: true
+  container-registry-username:
+    description: "Docker HubやGitHub Container Registryにあるプライベートイメージを検査する場合のコンテナレジストリのusername"
+    required: false
+  container-registry-password:
+    description: "Docker HubやGitHub Container Registryにあるプライベートイメージを検査する場合のコンテナレジストリのpassword"
+    required: false
 
 runs:
   using: "composite"
@@ -28,6 +34,9 @@ runs:
         vuln-type: 'os'
         severity: 'CRITICAL'
         output: 'trivy-results-raw.txt'
+      env:
+        TRIVY_USERNAME: ${{ inputs.container-registry-username }}
+        TRIVY_PASSWORD: ${{ inputs.container-registry-password }}
 
     - name: Output step summary
       if: failure()

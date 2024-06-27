@@ -12,6 +12,6 @@
     ":prConcurrentLimitNone",
 
     // https://github.com/aquaproj/aqua-renovate-config
-    "github>aquaproj/aqua-renovate-config:file#1.6.0(aqua.ya?ml|aqua/.*\\.ya?ml)",
+    "github>aquaproj/aqua-renovate-config:file#2.3.1(aqua.ya?ml|aqua/.*\\.ya?ml)",
   ],
 }

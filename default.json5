@@ -5,6 +5,9 @@
   timezone: "Asia/Tokyo",
 
   extends: [
+    // 月曜の朝に週イチでやってくれる
+    "schedule:weekly",
+
     "config:recommended",
 
     // https://docs.renovatebot.com/presets-default/

@@ -1,4 +1,5 @@
 {
+  configmigration: true,
   dependencyDashboard: true,
 
   // https://docs.renovatebot.com/key-concepts/scheduling/#setting-your-timezone

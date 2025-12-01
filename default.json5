@@ -9,7 +9,7 @@
     // 月曜の朝に週イチでやってくれる
     "schedule:weekly",
 
-    "config:recommended",
+    "config:best-practices",
 
     // https://docs.renovatebot.com/presets-default/
     ":prHourlyLimitNone",
